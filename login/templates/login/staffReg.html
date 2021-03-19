@@ -1,0 +1,227 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Management System</title>
+
+	<link rel="stylesheet" href="{%static 'css/jquery-ui.css'%}"/>
+	<link href="{% static 'css/style.css'%}" rel="stylesheet" type="text/css" media="all"/>
+	<!-- CSS only -->
+
+	<link rel="stylesheet" href="{% static 'css/font-awesome.css'%}"><!--font_wesome_icons-->
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet"><!--online_fonts-->
+	<link href="http://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet"><!--online_fonts-->
+<!--//css_files-->
+</head>
+<body>
+<section>
+				<div class="header">
+				  <div class="logo">
+					<a href="index.html"><img src="{%static 'images/logo2.png'%}"></a>
+				  </div>
+
+				  <div class="headerCont">
+					<b>DEPARTMENT INFORMATION SYSTEM</b>
+				  </div>
+				</div>
+			   </section>
+<div class="amcs-form">
+<form action="#" medthod="post">
+		<div class="amc-last-grid1">
+			<div class="amc-grid1">
+				<label class="text">Name</label>
+				<div class="amc-div">
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<input type="text" name="name" placeholder="Name" required=""/>
+				</div>
+			</div>
+			<div class="amc-grid2">
+			<label class="text">Specialisation In Teaching</label>
+			<div class="amc-div">
+				<i class="fa fa-address-book" aria-hidden="true"></i>
+				<input type="text" name="name" placeholder="Specialisation" required=""/>
+			</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="amc-last-grid1">
+			<div class="amc-grid1">
+				<label class="text">Mobile Number</label>
+				<div class="amc-div">
+					<i class="fa fa-mobile" aria-hidden="true"></i>
+					<input type="text" name="name" placeholder="Mobile Number" required=""/>
+				</div>
+			</div>
+			<div class="amc-grid2">
+			<label class="text">Mail id</label>
+			<div class="amc-div">
+				<i class="fa fa-envelope-o" aria-hidden="true"></i>
+				<input type="text" name="name" placeholder="Mail id" required=""/>
+			</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="amc-last-grid1">
+			<div class="amc-grid1">
+				<label class="text">gender</label>
+				<div class="amc-div">
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<select class="form-control" required="">
+						<option>gender</option>
+						<option>Male</option>
+						<option>Female</option>
+					</select>
+					<!---728x90--->
+
+				</div>
+			</div>
+			<div class="amc-grid2">
+				<label class="text">date of birth</label>
+				<div class="amc-div">
+					<i class="fa fa-calendar" aria-hidden="true"></i>
+					<input type="text" class="date" id="datepicker" name="date of birth" placeholder="dob" value="MM/DD/YYYY" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MM/DD/YYYY';}" required=""/>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+
+		<div class="amc-last-grid1">
+			<div class="amc-grid1">
+				<label class="text">Degree</label>
+				<div class="amc-div">
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<input type="email" name="email" placeholder="Degree" required=""/>
+				</div>
+			</div>
+			<div class="amc-grid2">
+				<label class="text">Subject</label>
+				<div class="amc-div">
+					<i class="fa fa-moile" aria-hidden="true"></i>
+					<input type="text" name="contact" placeholder="Subject" required=""/>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="amc-last-grid1">
+			<div class="amc-grid1">
+				<label class="text">College/University</label>
+				<div class="amc-div">
+					<i class="fa fa-user-plus" aria-hidden="true"></i>
+					<input type="text" name="address" placeholder="College/University" required=""/>
+				</div>
+			</div>
+			<div class="amc-grid2">
+				<label class="text">Year of passing</label>
+				<div class="amc-div">
+					<i class="fa fa-users" aria-hidden="true"></i>
+					<input type="text" name="city" placeholder="Year" required=""/>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<div class="amc-right-grid1">
+			<div class="amc-grid1">
+				<label class="text">Experience</label>
+				<div class="amc-div">
+					<i class="fa fa-users" aria-hidden="true"></i>
+					<input type="text" name="state" placeholder="Experience"  required=""/>
+				</div>
+			</div>
+			<div class="amc-grid2">
+				<label class="text">Research</label>
+				<div class="amc-div">
+					<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+					<input type="text" name="zipcode" placeholder="Research" required=""/>
+					<!---728x90--->
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<div class="amc-right-grid1">
+			<div class="amc-grid1">
+				<label class="text">Research Interest</label>
+				<div class="amc-div">
+					<i class="fa fa-heartbeat" aria-hidden="true"></i>
+					<input type="text" name="state" placeholder="Research Interest"  required=""/>
+				</div>
+			</div>
+			<div class="amc-grid2">
+				<label class="text">Sdministrative & acadaminc position</label>
+				<div class="amc-div">
+					<i class="fa fa-map" aria-hidden="true"></i>
+					<input type="text" name="zipcode" placeholder="Position" required=""/>
+					<!---728x90--->
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+
+			<div class="amc-last-grid1">
+				<div class="amc-grid1">
+					<label class="text">Conferences</label>
+					<div class="amc-div">
+						<i class="fa fa-book" aria-hidden="true"></i>
+						<input type="text" name="name" placeholder="Conferences" required=""/>
+					</div>
+				</div>
+				<div class="amc-grid2">
+				<label class="text">Articles In National And International</label>
+				<div class="amc-div">
+					<i class="fa fa-bookmark" aria-hidden="true"></i>
+					<input type="text" name="name" placeholder="Articles" required=""/>
+				</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div class="amc-last-grid1">
+					<div class="amc-grid1">
+						<label class="text">Seminars & Workshops</label>
+						<div class="amc-div">
+							<i class="fa fa-book" aria-hidden="true"></i>
+							<input type="text" name="name" placeholder="Seminars & Workshops" required=""/>
+						</div>
+					</div>
+					<div class="amc-grid2">
+					<label class="text">Achievements</label>
+					<div class="amc-div">
+						<i class="fa fa-bookmark" aria-hidden="true"></i>
+						<input type="text" name="name" placeholder="Achievements" required=""/>
+					</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="amc-last-grid1">
+						<div class="amc-grid1">
+							<label class="text">Other Activities								</label>
+							<div class="amc-div">
+								<i class="fa fa-book" aria-hidden="true"></i>
+								<input type="text" name="name" placeholder="Other Activities" required=""/>
+							</div>
+						</div>
+
+		<div class="clear"></div>
+		<div class="amcs-submit">
+		<!---728x90--->
+		<input type="submit" value="add a member">
+		</div>
+</form>
+</div>
+
+<!-- Default-JavaScript --> <script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js'%}"></script>
+
+<!-- Calendar -->
+<script src="{% static 'js/jquery-ui.js'%}"></script>
+	<script>
+		$(function() {
+		$( "#datepicker,#datepicker1" ).datepicker();
+		});
+	</script>
+<!-- //Calendar -->
+
+</html>
